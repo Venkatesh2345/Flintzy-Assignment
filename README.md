@@ -62,8 +62,4 @@ This Vite app can be deployed to Vercel or Netlify with the default settings:
 - Build command: `npm run build`
 - Output directory: `dist`
 
-After deployment, add the live URL here:
-
-Live URL: [https://flintzy-social-media-post-scheduler.netlify.app/](https://flintzy-social-media-post-scheduler.netlify.app/)
-
-The requested repository sharing and deployment require access to a Git hosting/deployment account, so those external steps are intentionally left as the final handoff action.
+Live deployment: [https://flintzy-social-media-post-scheduler.netlify.app/](https://flintzy-social-media-post-scheduler.netlify.app/)
