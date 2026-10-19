@@ -27,6 +27,26 @@ npm run preview
 - Optimistic failed-post retry with a 1-second mocked API delay and 20% simulated failure rate
 - Loading, empty, form validation, retry error, and success states
 
+## Project structure
+
+```text
+src/
+├── components/       # reusable UI grouped by feature
+│   ├── common/       # badges and async states
+│   ├── composer/     # post creation flow
+│   ├── dashboard/    # queue, cards, filters, stats
+│   └── layout/       # application shell
+├── constants/        # platform metadata and business rules
+├── hooks/            # queue state and mocked mutations
+├── lib/              # date and URL/filter utilities
+├── types/            # shared domain types
+├── data/             # local mock API data
+├── App.tsx           # feature composition only
+└── main.tsx          # application entry point
+```
+
+The UI is intentionally separated from queue state and domain logic so a real API client can replace the local hook later without rewriting the dashboard components.
+
 ## Key decisions and assumptions
 
 - Mock data lives in `src/data/posts.json` to keep the assignment self-contained and easy to inspect.
